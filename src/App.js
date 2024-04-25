@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import FileUpload from './FileUpload';
-import Navbar from './NavBar';
+//import Navbar from './NavBar';
 import AuthenticationButton from './AuthenticationButton';
 function App() {
   return (
