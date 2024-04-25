@@ -58,3 +58,31 @@
 .dropzone p {
   margin: 0;
 }
+
+/* Authentication button styles */
+.auth-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.auth-greeting {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.auth-button {
+  margin-top: 20px;
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+  background-color: #0056b3;
+}

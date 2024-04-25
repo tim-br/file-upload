@@ -1,5 +1,6 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
+import styles from './AuthenticationButton.module.css'; // Import the styles
 
 const AuthenticationButton = () => {
   const {
@@ -15,14 +16,23 @@ const AuthenticationButton = () => {
   }
 
   return isAuthenticated ? (
-    <div>
-      <p>Hello, {user.name}!</p>
-      <button onClick={() => logout({ returnTo: window.location.origin })}>
+    <div className="auth-container">
+      <button 
+        onClick={() => logout({ returnTo: window.location.origin })}
+        className="auth-button"
+      >
         Log Out
       </button>
+      <p className="auth-greeting">Hello, {user.name}!</p>
+
     </div>
   ) : (
-    <button onClick={loginWithRedirect}>Log In</button>
+    <button 
+      onClick={loginWithRedirect}
+      className="auth-button"
+    >
+      Log In
+    </button>
   );
 };
 
