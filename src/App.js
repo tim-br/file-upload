@@ -16,7 +16,7 @@ function App() {
         </a>
       </header>
       <AuthenticationButton />
-      <FileUpload />
+      {/* <FileUpload /> */}
     </div>
   );
 }
