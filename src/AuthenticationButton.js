@@ -11,8 +11,6 @@ const AuthenticationButton = () => {
     user
   } = useAuth0();
 
-  console.log("USER ", user)
-
   if (isLoading) {
     return <div>Loading...</div>;
   }
