@@ -23,13 +23,15 @@ const AuthenticationButton = () => {
       >
         Log Out
       </button>
-      <p className="auth-greeting">Hello, {user.name}!</p>
-
+      <p className="auth-greeting">Hello, {user.username || user.email}!</p>
+      <div className="auth-greeting">
+        <marquee behavior="slide" direction="left" scrollamount="10">🌟 Hello, {user.name}! Welcome back! 🌟</marquee>
+      </div>
     </div>
   ) : (
     <button 
       onClick={loginWithRedirect}
-      className="auth-button"
+      className="initial-auth-button"
     >
       Log In
     </button>

@@ -15,6 +15,13 @@ const onRedirectCallback = (appState) => {
     document.title,
     appState?.returnTo || window.location.pathname
   );
+
+  document.body.classList.add('black-background')
+  const header = document.querySelector('.app-header');
+  if (header) {
+    header.style.backgroundColor = '#000000'; // Set background color to black
+    header.style.color = '#FFFFFF'; // Set text color to white for visibility
+  }
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
