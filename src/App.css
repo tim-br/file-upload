@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.file-upload-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropzone {
+  border: 2px dashed #cccccc;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  width: 80%;
+  max-width: 600px; /* Optional: restricts the width for larger screens */
+}
+
+.dropzone p {
+  margin: 0;
+}
